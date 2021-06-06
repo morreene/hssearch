@@ -132,10 +132,10 @@ external_stylesheets = ['https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/
 # with "__name__" local css under assets is also included
 app = dash.Dash(__name__, external_stylesheets = external_stylesheets)
 
-auth = dash_auth.BasicAuth(
-    app,
-    VALID_USERNAME_PASSWORD_PAIRS
-)
+# auth = dash_auth.BasicAuth(
+#     app,
+#     VALID_USERNAME_PASSWORD_PAIRS
+# )
 app.title = 'Better HS Search'
 app.index_string = """<!DOCTYPE html>
 <html>
